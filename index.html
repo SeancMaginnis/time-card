@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid bg-light">
+    <div class="row text-center py-5">
+      <div class="col text-center">
+        <h1><u>Bi-Weekly Time Card</u></h1>
+      </div>
+    </div>
+    <div class="row text-center py-5">
+      <div class="col text-center">
+        <h2>Week One</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+
+        <card>
+          <h3>Mo</h3><button id="HRup1" onclick="changeHour('week1','d1','up')"><i class="fa fa-angle-up"></i>
+          </button>
+          <h4 id="week1d1">0</h4>
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>Tu</h3><button id="HRup2" onclick="changeHour('week1','d2','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week1d2">0</h4>
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>W</h3><button id="HRup3" onclick="changeHour('week1','d3','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week1d3">0</h4>
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>Th</h3><button id="HRup4" onclick="changeHour('week1','d4','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week1d4">0</h4>
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>Fr</h3><button id="HRup5" onclick="changeHour('week1','d5','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week1d5">0</h4>
+        </card>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <card><button id="HRup1" onclick="changeHour('week1','d1','down')">
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <h4 id="week1d1"></h4>
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup2" onclick="changeHour('week1','d2','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week1d2"></h4>
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup3" onclick="changeHour('week1','d3','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week1d3"></h4>
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup4" onclick="changeHour('week1','d4','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week1d4"></h4>
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup5" onclick="changeHour('week1','d5','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week1d5"></h4>
+        </card>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-light">
+    <div class="row text-center py-5">
+      <div class="col text-center">
+        <h2>Week Two</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <card>
+          <h3>Mo</h3><button id="HRup1" onclick="changeHour('week2','d1','up')">
+            <i class="fa fa-angle-up"></i>
+          </button>
+          <h4 id="week2d1">0</h4>
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>Tu</h3><button id="HRup2" onclick="changeHour('week2','d2','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week2d2">0</h4>
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>W</h3><button id="HRup3" onclick="changeHour('week2','d3','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week2d3">0</h4>
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>Th</h3><button id="HRup4" onclick="changeHour('week2','d4','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week2d4">0</h4>
+
+        </card>
+      </div>
+      <div class="col">
+        <card>
+          <h3>Fr</h3><button id="HRup5" onclick="changeHour('week2','d5','up')"><i class="fa fa-angle-up"></i></button>
+          <h4 id="week2d5">0</h4>
+        </card>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <card><button id="HRup1" onclick="changeHour('week2','d1','down')">
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <h4 id="week2d1"></h4>
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup2" onclick="changeHour('week2','d2','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week2d2"></h4>
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup3" onclick="changeHour('week2','d3','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week2d3"></h4>
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup4" onclick="changeHour('week2','d4','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week2d4"></h4>
+
+        </card>
+      </div>
+      <div class="col">
+        <card><button id="HRup5" onclick="changeHour('week2','d5','down')">
+            <i class="fas fa-angle-down"></i></button>
+          <h4 id="week2d5"></h4>
+
+        </card>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light">
+    <div class="row py-3">
+      <div class="col-9 text-center">
+        <h3>Week 1 Hours Worked: <h3 id="total1"> 0</h3>
+        </h3>
+      </div>
+      <div class="col-3">
+        <h3>Week 1 Wage: <h3 id="W1">0</h3>
+        </h3>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-9 text-center">
+        <h3>Week 2 Hours Worked: <h3 id="total2"> 0</h3>
+        </h3>
+      </div>
+      <div class="col-3">
+        <h3>Week 2 Wage: <h3 id="W2">0</h3>
+        </h3>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-9 text-center">
+        <h3>Total Hours Worked: <h3 id="total3"> 0</h3>
+        </h3>
+      </div>
+      <div class="col-3">
+        <h3>Total Wage:<h3 id="W3">0</h3>
+        </h3>
+        <h3>Paycheck after taxes <i class="far fa-frown"> : </i></h3>
+        <h3 id="tax">
+
+        </h3>
+
+      </div>
+    </div>
+  </div>
+  <script src="app/app.js"></script>
+</body>
+
+</html>
